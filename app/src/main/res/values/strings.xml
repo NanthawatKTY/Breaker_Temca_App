@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Breaker Temca App</string>
+    <string name="app_name2">Temca Application</string>
+    <string name="title_power_cable">Power Cable</string>
+    <string name="title_conduit">Conduits</string>
+
+<!--  Power Cable  -->
+    <string name="txt_search_cable_title"><b>Search cable size</b></string>
+    <string name="txt_breaker_size">Breaker Size: </string>
+    <string name="txt_breaker_size_unit">A</string>
+    <string name="txt_setup_form">Setup Form: </string>
+    <string name="txt_cable_type">Cable Type</string>
+    <string name="txt_cable_size">Cable Size</string>
+    <string name="txt_maximum_load">Maximum Load</string>
+    <string name="txt_conduit_size">Conduit Size: </string>
+    <string name="txt_electric_rail">Electric Rail: </string>
+
+    <!-- Spinner Setup Form -->
+    <string-array name="setup_form_lists">
+        <item>Select a setup form</item>
+        <item>Bangkok ?</item>
+        <item>London ?</item>
+    </string-array>
+</resources>

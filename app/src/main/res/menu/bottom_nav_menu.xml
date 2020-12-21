@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_power_cable"
+        android:icon="@drawable/power_cable"
+        android:title="@string/title_power_cable" />
+
+    <item
+        android:id="@+id/navigation_conduit"
+        android:icon="@drawable/wiring"
+        android:title="@string/title_conduit" />
+
+
+</menu>

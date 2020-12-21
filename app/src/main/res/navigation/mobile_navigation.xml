@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_power_cable">
+
+    <fragment
+        android:id="@+id/navigation_power_cable"
+        android:name="com.example.breakertemcaapp.ui.power_cable.PowerCableFragment"
+        android:label="@string/title_power_cable"
+        tools:layout="@layout/fragment_power_cable" />
+
+    <fragment
+        android:id="@+id/navigation_conduit"
+        android:name="com.example.breakertemcaapp.ui.conduit.ConduitFragment"
+        android:label="@string/title_conduit"
+        tools:layout="@layout/fragment_conduit" />
+
+
+</navigation>
