@@ -21,4 +21,9 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+    <style name="Theme.BreakerTemcaApp.EdtConduit">
+        <item name="android:layout_width">@dimen/edt_width</item>
+        <item name="android:layout_height">@dimen/edt_height</item>
+    </style>
 </resources>

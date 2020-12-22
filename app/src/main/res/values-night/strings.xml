@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="to_add_1_recyclerview_per_click">to add 1 recyclerview per click</string>
+    <string name="toaddconduitlists">toAddConduitLists</string>
+</resources>

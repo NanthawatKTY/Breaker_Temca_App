@@ -15,7 +15,6 @@
         android:id="@+id/navigation_conduit"
         android:name="com.example.breakertemcaapp.ui.conduit.ConduitFragment"
         android:label="@string/title_conduit"
-        tools:layout="@layout/fragment_conduit" />
-
+        tools:layout="@layout/fragment_conduit_24" />
 
 </navigation>

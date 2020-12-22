@@ -34,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="15dp"
-                    android:text="@string/txt_setup_form"
+                    android:text="@string/txt_search_cable_title"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -72,7 +72,7 @@
                         android:layout_marginTop="15dp"
                         android:text="@string/txt_breaker_size_unit"
                         android:textColor="@color/black"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
