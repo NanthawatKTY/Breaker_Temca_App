@@ -7,6 +7,10 @@ import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import androidx.recyclerview.widget.LinearLayoutManager
+//import com.example.breakertemcaapp.ui.conduit.ConduitAdapter
+import com.example.breakertemcaapp.ui.conduit.ConduitCable
+import kotlinx.android.synthetic.main.fragment_conduit.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,11 +21,18 @@ class MainActivity : AppCompatActivity() {
 
         val navController = findNavController(R.id.nav_host_fragment)
         navView.setupWithNavController(navController)
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
-//        val appBarConfiguration = AppBarConfiguration(setOf(
-//                R.id.navigation_power_cable, R.id.navigation_conduit))
-//        setupActionBarWithNavController(navController, appBarConfiguration)
-//        navView.setupWithNavController(navController)
-    }
+
+//        var conduitsItemLists = mutableListOf(
+//                ConduitCable("Type Size Amount 1", false),
+//                ConduitCable("Type Size Amount 2", false),
+//                ConduitCable("Type Size Amount 3", false),
+//                ConduitCable("Type Size Amount 4", false),
+//                ConduitCable("Type Size Amount 5", false),
+//                ConduitCable("Type Size Amount 6", false),
+//        )
+//
+//        val adapterConduits = ConduitAdapter(conduitsItemLists)
+//        rvConduitLists.adapter = adapterConduits
+//        rvConduitLists.layoutManager = LinearLayoutManager(this)
+   }
 }

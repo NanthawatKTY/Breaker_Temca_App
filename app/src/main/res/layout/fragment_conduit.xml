@@ -95,187 +95,204 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
                     android:orientation="vertical">
 
-                    <LinearLayout
-                        android:id="@+id/linearLayoutList1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:orientation="horizontal">
+                    <ScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-                        <androidx.gridlayout.widget.GridLayout
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="5dp"
-                            app:alignmentMode="alignMargins"
-                            app:columnCount="3"
-                            app:orientation="horizontal"
-                            app:rowCount="1">
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/edtCableType1"
-                                android:layout_width="@dimen/edt_width"
-                                android:layout_height="@dimen/edt_height"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginEnd="5dp"
-                                android:background="@drawable/rounded_edittxt"
-                                android:paddingStart="15dp"
-                                android:paddingEnd="15dp"
-                                android:textSize="12sp"/>
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvConduitLists"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp" />
+                        </LinearLayout>
+                    </ScrollView>
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/edtCableSize1"
-                                android:layout_width="@dimen/edt_width"
-                                android:layout_height="@dimen/edt_height"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginEnd="5dp"
-                                android:background="@drawable/rounded_edittxt"
-                                android:inputType="number"
-                                android:paddingStart="15dp"
-                                android:paddingEnd="15dp"
-                                android:textAlignment="textEnd"/>
+                    <!--                    <LinearLayout-->
+<!--                        android:id="@+id/linearLayoutList1"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:orientation="horizontal">-->
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/edtCableAmount1"
-                                android:layout_width="@dimen/edt_width"
-                                android:layout_height="@dimen/edt_height"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginEnd="5dp"
-                                android:background="@drawable/rounded_edittxt"
-                                android:inputType="number"
-                                android:paddingStart="15dp"
-                                android:paddingEnd="15dp"
-                                android:textAlignment="textEnd"/>
+<!--                        <androidx.gridlayout.widget.GridLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            app:alignmentMode="alignMargins"-->
+<!--                            app:columnCount="3"-->
+<!--                            app:orientation="horizontal"-->
+<!--                            app:rowCount="1">-->
 
-                        </androidx.gridlayout.widget.GridLayout>
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/edtCableType1"-->
+<!--                                android:layout_width="@dimen/edt_width"-->
+<!--                                android:layout_height="@dimen/edt_height"-->
+<!--                                android:layout_marginStart="5dp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginEnd="5dp"-->
+<!--                                android:background="@drawable/rounded_edittxt"-->
+<!--                                android:paddingStart="15dp"-->
+<!--                                android:paddingEnd="15dp"-->
+<!--                                android:textSize="12sp"/>-->
 
-                    </LinearLayout>
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/edtCableSize1"-->
+<!--                                android:layout_width="@dimen/edt_width"-->
+<!--                                android:layout_height="@dimen/edt_height"-->
+<!--                                android:layout_marginStart="5dp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginEnd="5dp"-->
+<!--                                android:background="@drawable/rounded_edittxt"-->
+<!--                                android:inputType="number"-->
+<!--                                android:paddingStart="15dp"-->
+<!--                                android:paddingEnd="15dp"-->
+<!--                                android:textAlignment="textEnd"/>-->
 
-                    <LinearLayout
-                        android:id="@+id/linearLayoutList2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:orientation="horizontal">
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/edtCableAmount1"-->
+<!--                                android:layout_width="@dimen/edt_width"-->
+<!--                                android:layout_height="@dimen/edt_height"-->
+<!--                                android:layout_marginStart="5dp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginEnd="5dp"-->
+<!--                                android:background="@drawable/rounded_edittxt"-->
+<!--                                android:inputType="number"-->
+<!--                                android:paddingStart="15dp"-->
+<!--                                android:paddingEnd="15dp"-->
+<!--                                android:textAlignment="textEnd"/>-->
 
-                        <androidx.gridlayout.widget.GridLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="5dp"
-                            app:alignmentMode="alignMargins"
-                            app:columnCount="3"
-                            app:orientation="horizontal"
-                            app:rowCount="1">
+<!--                        </androidx.gridlayout.widget.GridLayout>-->
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/edtCableType2"
-                                android:layout_width="@dimen/edt_width"
-                                android:layout_height="@dimen/edt_height"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginEnd="5dp"
-                                android:background="@drawable/rounded_edittxt"
-                                android:paddingStart="15dp"
-                                android:paddingEnd="15dp"
-                                android:textSize="12sp"/>
+<!--                    </LinearLayout>-->
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/edtCableSize2"
-                                android:layout_width="@dimen/edt_width"
-                                android:layout_height="@dimen/edt_height"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginEnd="5dp"
-                                android:background="@drawable/rounded_edittxt"
-                                android:inputType="number"
-                                android:paddingStart="15dp"
-                                android:paddingEnd="15dp"
-                                android:textAlignment="textEnd"/>
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/linearLayoutList2"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:orientation="horizontal">-->
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/edtCableAmount2"
-                                android:layout_width="@dimen/edt_width"
-                                android:layout_height="@dimen/edt_height"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginEnd="5dp"
-                                android:background="@drawable/rounded_edittxt"
-                                android:inputType="number"
-                                android:paddingStart="15dp"
-                                android:paddingEnd="15dp"
-                                android:textAlignment="textEnd"/>
+<!--                        <androidx.gridlayout.widget.GridLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            app:alignmentMode="alignMargins"-->
+<!--                            app:columnCount="3"-->
+<!--                            app:orientation="horizontal"-->
+<!--                            app:rowCount="1">-->
 
-                        </androidx.gridlayout.widget.GridLayout>
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/edtCableType2"-->
+<!--                                android:layout_width="@dimen/edt_width"-->
+<!--                                android:layout_height="@dimen/edt_height"-->
+<!--                                android:layout_marginStart="5dp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginEnd="5dp"-->
+<!--                                android:background="@drawable/rounded_edittxt"-->
+<!--                                android:paddingStart="15dp"-->
+<!--                                android:paddingEnd="15dp"-->
+<!--                                android:textSize="12sp"/>-->
 
-                    </LinearLayout>
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/edtCableSize2"-->
+<!--                                android:layout_width="@dimen/edt_width"-->
+<!--                                android:layout_height="@dimen/edt_height"-->
+<!--                                android:layout_marginStart="5dp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginEnd="5dp"-->
+<!--                                android:background="@drawable/rounded_edittxt"-->
+<!--                                android:inputType="number"-->
+<!--                                android:paddingStart="15dp"-->
+<!--                                android:paddingEnd="15dp"-->
+<!--                                android:textAlignment="textEnd"/>-->
 
-                    <LinearLayout
-                        android:id="@+id/linearLayoutList3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:orientation="horizontal">
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/edtCableAmount2"-->
+<!--                                android:layout_width="@dimen/edt_width"-->
+<!--                                android:layout_height="@dimen/edt_height"-->
+<!--                                android:layout_marginStart="5dp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginEnd="5dp"-->
+<!--                                android:background="@drawable/rounded_edittxt"-->
+<!--                                android:inputType="number"-->
+<!--                                android:paddingStart="15dp"-->
+<!--                                android:paddingEnd="15dp"-->
+<!--                                android:textAlignment="textEnd"/>-->
 
-                        <androidx.gridlayout.widget.GridLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="5dp"
-                            app:alignmentMode="alignMargins"
-                            app:columnCount="3"
-                            app:orientation="horizontal"
-                            app:rowCount="1">
+<!--                        </androidx.gridlayout.widget.GridLayout>-->
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/edtCableType3"
-                                android:layout_width="@dimen/edt_width"
-                                android:layout_height="@dimen/edt_height"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginEnd="5dp"
-                                android:background="@drawable/rounded_edittxt"
-                                android:paddingStart="15dp"
-                                android:paddingEnd="15dp"
-                                android:textSize="12sp"/>
+<!--                    </LinearLayout>-->
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/edtCableSize3"
-                                android:layout_width="@dimen/edt_width"
-                                android:layout_height="@dimen/edt_height"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginEnd="5dp"
-                                android:background="@drawable/rounded_edittxt"
-                                android:inputType="number"
-                                android:paddingStart="15dp"
-                                android:paddingEnd="15dp"
-                                android:textAlignment="textEnd"/>
+<!--                    <LinearLayout-->
+<!--                        android:id="@+id/linearLayoutList3"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:orientation="horizontal">-->
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/edtCableAmount3"
-                                android:layout_width="@dimen/edt_width"
-                                android:layout_height="@dimen/edt_height"
-                                android:layout_marginStart="5dp"
-                                android:layout_marginTop="10dp"
-                                android:layout_marginEnd="5dp"
-                                android:background="@drawable/rounded_edittxt"
-                                android:inputType="number"
-                                android:paddingStart="15dp"
-                                android:paddingEnd="15dp"
-                                android:textAlignment="textEnd"/>
+<!--                        <androidx.gridlayout.widget.GridLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_marginTop="5dp"-->
+<!--                            app:alignmentMode="alignMargins"-->
+<!--                            app:columnCount="3"-->
+<!--                            app:orientation="horizontal"-->
+<!--                            app:rowCount="1">-->
 
-                        </androidx.gridlayout.widget.GridLayout>
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/edtCableType3"-->
+<!--                                android:layout_width="@dimen/edt_width"-->
+<!--                                android:layout_height="@dimen/edt_height"-->
+<!--                                android:layout_marginStart="5dp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginEnd="5dp"-->
+<!--                                android:background="@drawable/rounded_edittxt"-->
+<!--                                android:paddingStart="15dp"-->
+<!--                                android:paddingEnd="15dp"-->
+<!--                                android:textSize="12sp"/>-->
 
-                    </LinearLayout>
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/edtCableSize3"-->
+<!--                                android:layout_width="@dimen/edt_width"-->
+<!--                                android:layout_height="@dimen/edt_height"-->
+<!--                                android:layout_marginStart="5dp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginEnd="5dp"-->
+<!--                                android:background="@drawable/rounded_edittxt"-->
+<!--                                android:inputType="number"-->
+<!--                                android:paddingStart="15dp"-->
+<!--                                android:paddingEnd="15dp"-->
+<!--                                android:textAlignment="textEnd"/>-->
+
+<!--                            <com.google.android.material.textfield.TextInputEditText-->
+<!--                                android:id="@+id/edtCableAmount3"-->
+<!--                                android:layout_width="@dimen/edt_width"-->
+<!--                                android:layout_height="@dimen/edt_height"-->
+<!--                                android:layout_marginStart="5dp"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginEnd="5dp"-->
+<!--                                android:background="@drawable/rounded_edittxt"-->
+<!--                                android:inputType="number"-->
+<!--                                android:paddingStart="15dp"-->
+<!--                                android:paddingEnd="15dp"-->
+<!--                                android:textAlignment="textEnd"/>-->
+
+<!--                        </androidx.gridlayout.widget.GridLayout>-->
+
+<!--                    </LinearLayout>-->
 
                 </LinearLayout>
 
 
                 <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floatingActionButton"
+                    android:id="@+id/addConduitButton"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:clickable="true"
