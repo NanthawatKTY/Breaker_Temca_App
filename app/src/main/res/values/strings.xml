@@ -21,4 +21,17 @@
         <item>Bangkok ?</item>
         <item>London ?</item>
     </string-array>
+
+
+<!--  Conduit  -->
+    <string name="txt_conduit_search_title"><b>Search conduit size</b></string>
+    <string name="txt_amount">Amount</string>
+    <string name="txt_conduit_size_suitable">Suitable conduit size: </string>
+    <string name="txt_rail_size_suitable">Suitable rail size: </string>
+    <string name="to_add_1_recyclerview_per_click">to add 1 recyclerview per click</string>
+    <string name="toaddconduitlists">toAddConduitLists</string>
+    <string name="conduitlisttitle">ConduitListTitle</string>
+    <string name="kode">kode</string>
+    <string name="kategori">kategori</string>
+    <string name="isi">isi</string>
 </resources>

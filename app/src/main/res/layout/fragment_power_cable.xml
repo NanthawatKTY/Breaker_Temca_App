@@ -34,7 +34,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
                     android:layout_marginTop="15dp"
-                    android:text="@string/txt_setup_form"
+                    android:text="@string/txt_search_cable_title"
                     android:textColor="@color/black"
                     android:textSize="20sp" />
 
@@ -72,7 +72,7 @@
                         android:layout_marginTop="15dp"
                         android:text="@string/txt_breaker_size_unit"
                         android:textColor="@color/black"
-                        android:textSize="15sp" />
+                        android:textSize="12sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -114,92 +114,155 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingStart="12.5dp"
-                        android:paddingEnd="12.5dp"
-                        android:orientation="horizontal">
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
 
                         <LinearLayout
-                            android:id="@+id/linearLayoutCableType"
-                            android:layout_width="100dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginEnd="5dp"
-                            android:orientation="vertical">
+                            android:orientation="horizontal"
+                            android:paddingStart="12.5dp"
+                            android:paddingEnd="12.5dp">
 
-                            <TextView
-                                android:id="@+id/txtCableType"
-                                android:layout_width="wrap_content"
+                            <LinearLayout
+                                android:id="@+id/linearLayoutCableType"
+                                android:layout_width="100dp"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:text="@string/txt_cable_type"
-                                android:textColor="@color/black"
-                                android:textStyle="bold"/>
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:orientation="vertical">
 
-                            <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/txtViewCableType"
-                                android:layout_width="match_parent"
-                                android:layout_height="60dp"
-                                android:layout_marginTop="10dp"
-                                android:paddingLeft="15dp"
-                                android:focusable="false"
-                                android:cursorVisible="false"
-                                android:background="@drawable/rounded_edittxt" />
+                                <TextView
+                                    android:id="@+id/txtCableType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/txt_cable_type"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/txtViewCableType"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/rounded_edittxt"
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:paddingLeft="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutCableSize"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtCableSize"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/txt_cable_size"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/txtViewCableSize"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/rounded_edittxt"
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:paddingLeft="15dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/linearLayoutMaxLoad"
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtMaxLoad"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/txt_maximum_load"
+                                    android:textColor="@color/black"
+                                    android:textStyle="bold" />
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:id="@+id/txtViewMaxLoad"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="60dp"
+                                    android:layout_marginTop="10dp"
+                                    android:background="@drawable/rounded_edittxt"
+                                    android:cursorVisible="false"
+                                    android:focusable="false"
+                                    android:paddingStart="15dp" />
+                            </LinearLayout>
                         </LinearLayout>
 
                         <LinearLayout
-                            android:id="@+id/linearLayoutCableSize"
-                            android:layout_width="100dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginEnd="5dp"
-                            android:orientation="vertical" >
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
+
                             <TextView
-                                android:id="@+id/txtCableSize"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:text="@string/txt_cable_size"
+                                android:text="@string/txt_conduit_size"
+                                android:layout_gravity="center"
+                                android:paddingStart="10dp"
                                 android:textColor="@color/black"
                                 android:textStyle="bold"/>
 
                             <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/txtViewCableSize"
+                                android:id="@+id/txtViewConduitSize"
                                 android:layout_width="match_parent"
-                                android:layout_height="60dp"
-                                android:layout_marginTop="10dp"
-                                android:paddingLeft="15dp"
-                                android:focusable="false"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/rounded_edittxt"
                                 android:cursorVisible="false"
-                                android:background="@drawable/rounded_edittxt" />
+                                android:focusable="false"
+                                android:inputType="number"
+                                android:paddingStart="15dp" />
                         </LinearLayout>
 
                         <LinearLayout
-                            android:id="@+id/linearLayoutMaxLoad"
-                            android:layout_width="100dp"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginEnd="5dp"
-                            android:orientation="vertical" >
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal">
 
                             <TextView
-                                android:id="@+id/txtMaxLoad"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="10dp"
-                                android:text="@string/txt_maximum_load"
+                                android:text="@string/txt_electric_rail"
+                                android:layout_gravity="center"
+                                android:paddingStart="10dp"
                                 android:textColor="@color/black"
                                 android:textStyle="bold"/>
 
                             <com.google.android.material.textfield.TextInputEditText
-                                android:id="@+id/txtViewMaxLoad"
+                                android:id="@+id/txtViewElectricRailSize"
                                 android:layout_width="match_parent"
-                                android:layout_height="60dp"
-                                android:layout_marginTop="10dp"
-                                android:paddingStart="15dp"
-                                android:focusable="false"
+                                android:layout_height="50dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="10dp"
+                                android:background="@drawable/rounded_edittxt"
                                 android:cursorVisible="false"
-                                android:background="@drawable/rounded_edittxt" />
+                                android:focusable="false"
+                                android:inputType="number"
+                                android:paddingStart="30dp" />
                         </LinearLayout>
                     </LinearLayout>
 
