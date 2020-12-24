@@ -12,20 +12,11 @@ import kotlinx.android.synthetic.main.item_conduit_lists.view.*
 
 class ConduitAdapter : RecyclerView.Adapter<ConduitAdapter.ViewHolder>(){
 
-    private val kode = arrayOf("d116df5",
-        "36ffc75", "f5cfe78", "5b87628",
-        "db8d14e", "9913dc4", "e120f96",
-        "466251b")
+    private val kode = arrayOf("d116df5", "36ffc75", "f5cfe78")
 
-    private val kategori = arrayOf("Kekayaan", "Teknologi",
-        "Keluarga", "Bisnis",
-        "Keluarga", "Hutang",
-        "Teknologi", "Pidana")
+    private val kategori = arrayOf("Kekayaan", "Teknologi", "Keluarga", )
 
-    private val isi = arrayOf("pertanyaan 9",
-        "pertanyaan 11", "pertanyaan 17", "test forum",
-        "pertanyaan 12", "pertanyaan 18", "pertanyaan 20",
-        "pertanyaan 21")
+    private val isi = arrayOf("pertanyaan 9", "pertanyaan 11", "pertanyaan 17")
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
@@ -33,10 +24,11 @@ class ConduitAdapter : RecyclerView.Adapter<ConduitAdapter.ViewHolder>(){
         var itemKategori: TextView
         var itemIsi: TextView
 
+
         init {
-            itemKode = itemView.findViewById(R.id.kodePertanyaan)
-            itemKategori = itemView.findViewById(R.id.kategori)
-            itemIsi = itemView.findViewById(R.id.isiPertanyaan)
+            itemKode = itemView.findViewById(R.id.edtCableType)
+            itemKategori = itemView.findViewById(R.id.edtCableSize)
+            itemIsi = itemView.findViewById(R.id.edtCableAmount)
 
 //            itemView.setOnClickListener {
 //                var position: Int = adapterPosition
@@ -51,16 +43,15 @@ class ConduitAdapter : RecyclerView.Adapter<ConduitAdapter.ViewHolder>(){
 //            }
         }
     }
-    override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int): ViewHolder {
-        val v = LayoutInflater.from(viewGroup.context)
-            .inflate(R.layout.card_conduit_cal_list, viewGroup, false)
+    override fun onCreateViewHolder(parent: ViewGroup, i: Int): ViewHolder {
+        val v = LayoutInflater.from(parent.context).inflate(R.layout.card_conduit_cal_list, parent, false)
         return ViewHolder(v)
     }
 
-    override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
-        viewHolder.itemKode.text = kode[i]
-        viewHolder.itemKategori.text = kategori[i]
-        viewHolder.itemIsi.text = isi[i]
+    override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
+        viewHolder.itemKode.text = kode[position]
+        viewHolder.itemKategori.text = kategori[position]
+        viewHolder.itemIsi.text = isi[position]
 
     }
 

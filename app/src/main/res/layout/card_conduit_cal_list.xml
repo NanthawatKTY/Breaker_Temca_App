@@ -2,9 +2,11 @@
 <androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="96dp"
-    android:layout_marginTop="12dp"
+    android:layout_height="80dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
     android:layout_marginLeft="16dp"
     android:layout_marginRight="16dp"
     android:id="@+id/card_conduit_cal"
@@ -12,51 +14,114 @@
     card_view:cardCornerRadius="8dp"
     card_view:contentPadding="10dp"
     android:foreground="?selectableItemBackground"
-    android:clickable="true">
+    android:clickable="true"
+    android:focusable="true">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content" >-->
 
         <LinearLayout
+            android:id="@+id/linearLayoutList1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/kodePertanyaan"
-                android:layout_width="181dp"
-                android:layout_height="20dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="68dp"
-                android:text="@string/kode" />
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:columnCount="3"
+                    android:orientation="horizontal"
+                    android:rowCount="1"
+                    android:columnOrderPreserved="false"
+                    android:alignmentMode="alignMargins"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayoutList1"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayoutList1">
 
-            <TextView
-                android:id="@+id/kategori"
-                android:layout_width="match_parent"
-                android:layout_height="20dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="16dp"
-                android:text="@string/kategori"
-                android:gravity="end|center_vertical"/>
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtCableType"
+                        android:layout_width="@dimen/edt_width"
+                        android:layout_height="@dimen/edt_height"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_btn_conduit"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:textSize="15sp" />
 
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtCableSize"
+                        android:layout_width="@dimen/edt_width"
+                        android:layout_height="@dimen/edt_height"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_btn_conduit"
+                        android:inputType="number"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:textAlignment="textEnd" />
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtCableAmount"
+                        android:layout_width="@dimen/edt_width"
+                        android:layout_height="@dimen/edt_height"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rounded_btn_conduit"
+                        android:inputType="number"
+                        android:paddingStart="15dp"
+                        android:paddingEnd="15dp"
+                        android:textAlignment="textEnd" />
+
+                </GridLayout>
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
 
-            <TextView
-                android:id="@+id/isiPertanyaan"
-                android:layout_width="match_parent"
-                android:layout_height="36dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="44dp"
-                android:layout_marginEnd="16dp"
-                android:layout_marginBottom="16dp"
-                android:gravity="top"
-                android:text="@string/isi" />
+<!--            <TextView-->
+<!--                android:id="@+id/kodePertanyaan"-->
+<!--                android:layout_width="181dp"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginEnd="68dp"-->
+<!--                android:text="@string/kode" />-->
 
-        </LinearLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/kategori"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="20dp"-->
+<!--                android:layout_marginTop="16dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:text="@string/kategori"-->
+<!--                android:gravity="end|center_vertical"/>-->
 
-    </RelativeLayout>
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/isiPertanyaan"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="36dp"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_marginTop="44dp"-->
+<!--                android:layout_marginEnd="16dp"-->
+<!--                android:layout_marginBottom="16dp"-->
+<!--                android:gravity="top"-->
+<!--                android:text="@string/isi" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </RelativeLayout>-->
 </androidx.cardview.widget.CardView>

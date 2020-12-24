@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.breakertemcaapp.R
 import kotlinx.android.synthetic.main.fragment_conduit.*
+import kotlin.random.Random
 
 class ConduitFragment : Fragment(R.layout.fragment_conduit) {
 
@@ -22,5 +23,11 @@ class ConduitFragment : Fragment(R.layout.fragment_conduit) {
         }
 
     }
-
+//
+//    fun insertItem(view: View){
+//        val index:Int = Random.nextInt(8)
+//        val newItem = ConduitCable(
+//
+//        )
+//    }
 }
